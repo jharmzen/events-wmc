@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2b42"/>
+      <stop offset="1" stop-color="#0f1a2b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7d774"/>
+      <stop offset="0.5" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#a67c00"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <!-- Upward growth bars (wealth creation) -->
+  <rect x="12" y="38" width="8" height="16" rx="1.5" fill="url(#gold)"/>
+  <rect x="24" y="28" width="8" height="26" rx="1.5" fill="url(#gold)"/>
+  <rect x="36" y="18" width="8" height="36" rx="1.5" fill="url(#gold)"/>
+  <!-- Upward trending arrow -->
+  <path d="M12 34 L28 22 L38 28 L52 12" fill="none" stroke="#4b94cd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 12 L52 12 L52 20" fill="none" stroke="#4b94cd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
