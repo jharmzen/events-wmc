@@ -56,7 +56,7 @@ export default function FinalCTA() {
           data-element_type="widget"
           data-widget_type="button.default"
         >
-          {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 17 June 2026 */}
+          {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 8 July 2026 */}
           <a
             className="elementor-button elementor-button-link elementor-size-sm"
             href="#details"

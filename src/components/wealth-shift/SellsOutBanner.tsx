@@ -8,7 +8,7 @@ export default function SellsOutBanner() {
     >
       <div className="e-con-inner">
         <div className="elementor-element elementor-element-7bd013c elementor-widget__width-inherit elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="7bd013c" data-element_type="widget" data-widget_type="text-editor.default">
-          <p>THIS IS A ONLINE EVENT WITH LIMITED CAPACITY. REGISTRATION WILL CLOSE ONCE SEATS ARE FILLED.</p>
+          <p>Attendance is completely FREE, but viewing capacity is limited. Register now before all spots are filled.</p>
         </div>
       </div>
     </div>

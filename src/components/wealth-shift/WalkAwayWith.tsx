@@ -77,7 +77,7 @@ export default function WalkAwayWith() {
 
           {/* CTA button */}
           <div className="elementor-element elementor-element-22aed652 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="22aed652" data-element_type="widget" data-widget_type="button.default">
-            {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 17 June 2026 */}
+            {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 8 July 2026 */}
             <a className="elementor-button elementor-button-link elementor-size-sm" href="#details">
               <span className="elementor-button-content-wrapper">
                 <span className="elementor-button-text">RESERVE YOUR SEAT NOW</span>

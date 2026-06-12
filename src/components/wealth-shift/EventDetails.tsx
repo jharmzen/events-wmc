@@ -69,10 +69,10 @@ export default function EventDetails() {
                 <table style={{ borderCollapse: 'collapse', marginBottom: '20px' }}>
                   <tbody>
                     {[
-                      ['Date:', 'Wednesday, 17 June 2026'],
+                      ['Date:', 'Wednesday, 8 July 2026'],
                       ['Time:', '10:00 AM'],
                       ['Duration:', '3–4 Hours'],
-                      ['Investment:', 'R199 per person'],
+                      ['Investment:', 'Free (Registration Required)'],
                       ['Presented by:', 'Zirk Coetzee'],
                     ].map(([label, value], i) => (
                       <tr key={i}>
@@ -93,7 +93,7 @@ export default function EventDetails() {
 
             </div>
             <div className="elementor-element elementor-element-2c027be0 elementor-mobile-align-center elementor-align-left elementor-widget elementor-widget-button" data-id="2c027be0" data-element_type="widget" data-widget_type="button.default">
-              {/* TODO: Add Quicket booking URL for Wealth Shift Webinar 17 June 2026 */}
+              {/* TODO: Add Quicket booking URL for Wealth Shift Webinar 8 July 2026 */}
               <a className="elementor-button elementor-button-link elementor-size-sm" href="https://www.quicket.co.za/events/380454-property-investment-wealth-webinar-1706#/" target="_blank" rel="noopener noreferrer">
                 <span className="elementor-button-content-wrapper">
                   <span className="elementor-button-text">BOOK NOW</span>

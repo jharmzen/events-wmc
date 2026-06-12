@@ -39,7 +39,7 @@ export default function ProvenStrategies() {
             <p>This webinar will help you move from guessing to structured thinking.</p>
           </div>
           <div className="elementor-element elementor-element-22aed653 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="22aed653" data-element_type="widget" data-widget_type="button.default">
-            {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 17 June 2026 */}
+            {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 8 July 2026 */}
             <a
               className="elementor-button elementor-button-link elementor-size-sm"
               href="#details"
