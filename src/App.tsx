@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import WealthShiftPage from './pages/WealthShiftPage'
 
-const APP_VERSION = '0.2.0'
+const APP_VERSION = __APP_VERSION__
 const RELOAD_KEY = 'version_reload_attempted'
 
 export default function App() {
   useEffect(() => {
+    if (!import.meta.env.PROD) return
     fetch(`/version.json?t=${Date.now()}`)
       .then((res) => res.json())
       .then(async (data: { version: string }) => {
@@ -39,7 +40,9 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/wealth-shift-20260617" element={<WealthShiftPage />} />
+      <Route path="/wealth-shift-20260708" element={<WealthShiftPage />} />
+      {/* Old slug retained for historic marketing runs — redirect to current date */}
+      <Route path="/wealth-shift-20260617" element={<Navigate to="/wealth-shift-20260708" replace />} />
     </Routes>
   )
 }
