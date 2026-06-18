@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import WealthShiftPage from './pages/WealthShiftPage'
+import JhbMasterclassPage from './pages/JhbMasterclassPage'
 
 const APP_VERSION = __APP_VERSION__
 const RELOAD_KEY = 'version_reload_attempted'
@@ -43,6 +44,9 @@ export default function App() {
       <Route path="/wealth-shift-20260708" element={<WealthShiftPage />} />
       {/* Old slug retained for historic marketing runs — redirect to current date */}
       <Route path="/wealth-shift-20260617" element={<Navigate to="/wealth-shift-20260708" replace />} />
+      <Route path="/jhb-masterclass-20260704" element={<JhbMasterclassPage />} />
+      {/* Dev/marketing short link — redirect to canonical slug */}
+      <Route path="/040072026" element={<Navigate to="/jhb-masterclass-20260704" replace />} />
     </Routes>
   )
 }
