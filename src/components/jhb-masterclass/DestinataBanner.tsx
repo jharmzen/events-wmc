@@ -13,7 +13,7 @@ export default function DestinataBanner() {
           <br /><span style={{ color: '#C69330' }}>R1,600</span> (Person + 2 Guests)
         </p>
         <p style={{ color: '#FFFFFF', fontFamily: '"Poppins", Sans-serif', fontSize: '22px', fontWeight: 700, lineHeight: 1.5, margin: '0' }}>
-          Platinum Members Attend <span style={{ color: '#C69330' }}>FREE</span>
+          Platinum Members | <span style={{ color: '#C69330' }}>R400 per person</span>
         </p>
       </div>
     </div>

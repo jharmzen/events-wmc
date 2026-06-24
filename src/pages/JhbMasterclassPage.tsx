@@ -25,9 +25,9 @@ export default function JhbMasterclassPage() {
       {/* Meta Pixel fires via index.html (ID 1361266612389502) — shared across all pages. */}
       <RouteHead
         title="Property Investment Masterclass Johannesburg 04 July 2026 | Wealth Masters Club"
-        description="PROPERTY INVESTMENT MASTERCLASS IN JOHANNESBURG. The Strategy Behind Successful Property Investors. Emperors Palace, Kempton Park. 04 July 2026 (09:00 - 13:00). R800 per person | R1,200 (Person + 1 Guest) | R1,600 (Person + 2 Guests). Platinum Members Attend FREE."
+        description="PROPERTY INVESTMENT MASTERCLASS IN JOHANNESBURG. The Strategy Behind Successful Property Investors. Emperors Palace, Kempton Park. 04 July 2026 (09:00 - 13:00). R800 per person | R1,200 (Person + 1 Guest) | R1,600 (Person + 2 Guests). Platinum Members | R400 per person."
         ogTitle="Property Investment Masterclass Johannesburg - Wealth Masters Club"
-        ogDescription="PROPERTY INVESTMENT MASTERCLASS IN JOHANNESBURG. Emperors Palace, Kempton Park. 04 July 2026 (09:00 - 13:00). R800 per person | R1,200 (Person + 1 Guest) | R1,600 (Person + 2 Guests). Platinum Members Attend FREE."
+        ogDescription="PROPERTY INVESTMENT MASTERCLASS IN JOHANNESBURG. Emperors Palace, Kempton Park. 04 July 2026 (09:00 - 13:00). R800 per person | R1,200 (Person + 1 Guest) | R1,600 (Person + 2 Guests). Platinum Members | R400 per person."
         // TODO: Confirm production canonical URL with user — Durban canonical uses a /step/ prefix; using the plain route path until confirmed.
         canonical="https://events.wealthmastersclub.com/jhb-masterclass-20260704"
       />

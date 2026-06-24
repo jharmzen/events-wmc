@@ -46,7 +46,7 @@ export default function FinalCTA() {
               <p>The right property strategy can create lasting wealth.</p>
               <p>The wrong structure can cost you time, money and opportunity.</p>
               <p>Join Coert Coetzee at Emperors Palace and learn how to build with strategy, structure and long-term growth in mind.</p>
-              <p><strong>R800 per person | R1,200 for 2 people | R1,600 for 3 people<br />Platinum Members Attend Free</strong></p>
+              <p><strong>R800 per person | R1,200 for 2 people | R1,600 for 3 people<br />Platinum Members | R400 per person</strong></p>
             </div>
             <div
               className="elementor-element elementor-element-d882e74 elementor-mobile-align-center elementor-widget elementor-widget-button"

@@ -53,7 +53,7 @@ export default function EventDetails() {
                   </li>
                   <li className="elementor-icon-list-item">
                     <span className="elementor-icon-list-icon"><DiamondIcon /></span>
-                    <span className="elementor-icon-list-text"><span style={{ color: '#4782B5', fontWeight: 700 }}>R800</span> per person | <span style={{ color: '#4782B5', fontWeight: 700 }}>R1,200</span> (Person + 1 Guest)<br />Platinum Members Attend <span style={{ color: '#4782B5' }}>FREE</span></span>
+                    <span className="elementor-icon-list-text"><span style={{ color: '#4782B5', fontWeight: 700 }}>R800</span> per person | <span style={{ color: '#4782B5', fontWeight: 700 }}>R1,200</span> (Person + 1 Guest)<br />Platinum Members | <span style={{ color: '#4782B5' }}>R400 per person</span></span>
                   </li>
                 </ul>
               </div>
