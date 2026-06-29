@@ -25,7 +25,7 @@ const cities = [
     name: 'DURBAN',
     dateDisplay: '5 September 2026',
     venue: 'Capital Pearls, Durban',
-    img: '/images/city-card-durban.png',
+    img: '/images/city-card-durban-sep2026.png',
     pageLink: 'https://events.wealthmastersclub.com/step/property-investment-masterclass-dbn27062026',
     bookLink: 'https://www.quicket.co.za/events/384123-wealth-property-investment-masterclass-0209capital-pearls/',
     goldFrame: false,
