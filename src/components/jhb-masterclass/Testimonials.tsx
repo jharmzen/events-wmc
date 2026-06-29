@@ -24,11 +24,6 @@ const testimonials = [
     author: 'John Garth Wilson',
     quote: '"The course is a comprehensive introduction and is set out in laymen\'s terms, enabling the most inexperienced to follow a simple system to concrete financial independence."',
   },
-  {
-    id: 'efc3b02',
-    author: 'Philip Michael Reynolds',
-    quote: '"The course is very practicable and worded in an easy to understand way. VERY WELL DONE."',
-  },
 ]
 
 export default function Testimonials() {
@@ -70,7 +65,7 @@ export default function Testimonials() {
             <div className="ekit-heading elementskit-section-title-wraper text_center ekit_heading_tablet- ekit_heading_mobile-">
               <h2 className="ekit-heading--title elementskit-section-title">REAL PEOPLE   |   REAL RESULTS</h2>
               <div className="ekit-heading__description">
-                <p>For nearly three decades, Wealth Masters Club has guided people<br />to protect assets, cut tax, and build generational wealth.</p>
+                <p>For Nearly Three Decades, Wealth Masters Club Has Guided People<br />To Protect Assets, Cut Tax, And Build Generational Wealth.</p>
               </div>
             </div>
           </div>

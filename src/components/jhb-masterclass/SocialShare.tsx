@@ -12,7 +12,7 @@ export default function SocialShare() {
             <div className="ekit-heading elementskit-section-title-wraper text_center ekit_heading_tablet- ekit_heading_mobile-">
               <h2 className="ekit-heading--title elementskit-section-title">Social Share</h2>
               <div className="ekit-heading__description">
-                <p>Follow us on Facebook, Instagram, and LinkedIn for expert tips, event updates,<br /> and real success stories from our members.</p>
+                <p>Follow Us On Facebook, Instagram, And LinkedIn For Expert Tips, Event Updates, And Real Success Stories From Our Members.</p>
               </div>
             </div>
           </div>

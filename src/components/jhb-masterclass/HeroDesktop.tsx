@@ -8,7 +8,7 @@ export default function HeroDesktop() {
       style={{ backgroundImage: 'url("/images/jhb-hero-fade.png")' }}
     >
       <div className="e-con-inner" style={{ maxWidth: '1475px', width: '100%', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'clamp(15px, 4vw, 60px)', paddingRight: 'clamp(15px, 4vw, 60px)' }}>
-        <div className="elementor-element elementor-element-4246301f e-con-full e-flex e-con e-child" data-id="4246301f" data-element_type="container" data-settings='{"background_background":"classic"}'>
+        <div className="elementor-element elementor-element-4246301f e-con-full e-flex e-con e-child" data-id="4246301f" data-element_type="container" data-settings='{"background_background":"classic"}' style={{ marginTop: 0 }}>
           <div className="elementor-element elementor-element-6608053b elementor-widget elementor-widget-image" data-id="6608053b" data-element_type="widget" data-widget_type="image.default">
             <img
               decoding="async"
@@ -22,19 +22,16 @@ export default function HeroDesktop() {
             />
           </div>
           <div className="elementor-element elementor-element-d3dc3d9 elementor-widget elementor-widget-heading" data-id="d3dc3d9" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default" style={{ color: '#4782B5' }}>PROPERTY INVESTMENT MASTERCLASS IN JOHANNESBURG</h2>
+            <h2 className="elementor-heading-title elementor-size-default" style={{ color: '#C89116' }}>BUY RIGHT | INVEST SMART | BUILD WEALTH</h2>
           </div>
-          <div className="elementor-element elementor-element-75d2b3e4 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="75d2b3e4" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default">The Strategy Behind</h2>
+          <div className="elementor-element elementor-element-75d2b3e4 elementor-widget elementor-widget-heading" data-id="75d2b3e4" data-element_type="widget" data-widget_type="heading.default">
+            <h2 className="elementor-heading-title elementor-size-default" style={{ fontFamily: '"Montserrat", sans-serif', fontSize: '42px', fontWeight: 700, color: '#0D203B', textTransform: 'uppercase', lineHeight: 1.1, margin: '0 0 8px' }}>Wealth &amp; Property Investment Masterclass</h2>
           </div>
-          <div className="elementor-element elementor-element-38138ce4 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="38138ce4" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default" style={{ color: '#C28A15' }}>Successful</h2>
-          </div>
-          <div className="elementor-element elementor-element-4eb7e081 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="4eb7e081" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default" style={{ color: '#0D203B' }}>Property Investors</h2>
+          <div className="elementor-element elementor-element-9a1bc220 elementor-widget elementor-widget-text-editor" data-id="9a1bc220" data-element_type="widget" data-widget_type="text-editor.default" style={{ backgroundColor: '#0D203B', padding: '10px 16px', width: '100%', boxSizing: 'border-box', margin: '8px 0 0' }}>
+            <p style={{ color: '#C89116', fontWeight: 700, fontSize: '13px', letterSpacing: '1px', margin: 0 }}>ESTABLISHED 1996 &nbsp;|&nbsp; 2,200+ PROPERTIES &nbsp;|&nbsp; R2.4 BILLION+ PORTFOLIO VALUE</p>
           </div>
           <div className="elementor-element elementor-element-6fcb5641 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="6fcb5641" data-element_type="widget" data-widget_type="text-editor.default">
-            <p>Property alone doesn't create wealth. Strategy does. Join Coert Coetzee and discover how successful investors structure, protect and grow wealth through property.</p>
+            <p>Join Coert Coetzee and Wealth Masters Club for a practical in-person masterclass designed to help you make smarter property investment decisions, protect your assets, and build long-term wealth with confidence.</p>
           </div>
           <div className="elementor-element elementor-element-4b75cede elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4b75cede" data-element_type="widget" data-widget_type="icon-list.default">
             <ul className="elementor-icon-list-items">
@@ -54,20 +51,26 @@ export default function HeroDesktop() {
                 <span className="elementor-icon-list-icon">
                   <svg aria-hidden="true" className="e-font-icon-svg e-fas-ticket-alt" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M128 160h320v192H128V160zm400 96c0 26.51 21.49 48 48 48v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c26.51 0 48-21.49 48-48s-21.49-48-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v96c-26.51 0-48 21.49-48 48zm-48-104c0-13.255-10.745-24-24-24H120c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V152z"/></svg>
                 </span>
-                <span className="elementor-icon-list-text">R800 per person | R1,200 – Person + 1 Guest</span>
+                <span className="elementor-icon-list-text">Members: First 20 Attend Free | Non-Members: R800 | Guests: R400</span>
               </li>
             </ul>
           </div>
           <div className="elementor-element elementor-element-4b149a5e elementor-widget elementor-widget-button" data-id="4b149a5e" data-element_type="widget" data-widget_type="button.default">
             <a
               className="elementor-button elementor-button-link elementor-size-sm"
-              href="#details"
-              style={{ backgroundColor: '#4782B5', color: '#FFFFFF' }}
+              href="#tickets"
+              style={{ backgroundColor: '#C89116', color: '#FFFFFF' }}
             >
               <span className="elementor-button-content-wrapper">
-                <span className="elementor-button-text">View Event Details</span>
+                <span className="elementor-button-text">Reserve Your Seat</span>
               </span>
             </a>
+          </div>
+          <div className="elementor-element elementor-element-8b3c19f2 elementor-widget elementor-widget-text-editor" data-id="8b3c19f2" data-element_type="widget" data-widget_type="text-editor.default">
+            <p style={{ fontSize: '12px', opacity: 0.75, margin: '8px 0 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style={{ width: '16px', height: '16px', flexShrink: 0 }}><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" fill="currentColor"/></svg>
+              Limited seats available. Early bookings is recommended.
+            </p>
           </div>
         </div>
       </div>

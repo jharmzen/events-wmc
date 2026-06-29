@@ -2,100 +2,93 @@ const QUICKET_JHB = 'https://www.quicket.co.za/events/377079-wealth-property-inv
 
 const benefits = [
   {
-    cardId: '3590e4b3',
-    listId: '15ba8f76',
-    headingId: '2fe99442',
+    label: 'Buy The Right\nProperty',
+    desc: 'Learn how experienced investors evaluate opportunities, identify stronger locations, and avoid costly purchasing mistakes before they buy.',
     icon: (
-      <svg aria-hidden="true" className="e-font-icon-svg e-fas-coins" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/>
+      </svg>
     ),
-    label: 'Tax-Efficient Cash Flow ',
-    desc: 'How to structure your wealth for better tax efficiency and more consistent cash flow.',
   },
   {
-    cardId: 'ce16f2a',
-    listId: '3eaa364',
-    headingId: '77550dfa',
+    label: 'Create Sustainable\nCash Flow',
+    desc: 'Discover how to structure property investments to improve monthly cash flow and build a portfolio designed for long-term wealth.',
     icon: (
-      <svg aria-hidden="true" className="e-font-icon-svg e-fas-laptop-house" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M272,288H208a16,16,0,0,1-16-16V208a16,16,0,0,1,16-16h64a16,16,0,0,1,16,16v37.12C299.11,232.24,315,224,332.8,224H469.74l6.65-7.53A16.51,16.51,0,0,0,480,207a16.31,16.31,0,0,0-4.75-10.61L416,144V48a16,16,0,0,0-16-16H368a16,16,0,0,0-16,16V87.3L263.5,8.92C258,4,247.45,0,240.05,0s-17.93,4-23.47,8.92L4.78,196.42A16.15,16.15,0,0,0,0,207a16.4,16.4,0,0,0,3.55,9.39L22.34,237.7A16.22,16.22,0,0,0,33,242.48,16.51,16.51,0,0,0,42.34,239L64,219.88V384a32,32,0,0,0,32,32H272ZM629.33,448H592V288c0-17.67-12.89-32-28.8-32H332.8c-15.91,0-28.8,14.33-28.8,32V448H266.67A10.67,10.67,0,0,0,256,458.67v10.66A42.82,42.82,0,0,0,298.6,512H597.4A42.82,42.82,0,0,0,640,469.33V458.67A10.67,10.67,0,0,0,629.33,448ZM544,448H352V304H544Z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M564 192c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H48c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h516c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H96V192h468zm-344 48c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v128c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240zm96 0c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v128c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240zm96 0c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v128c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240zm96 0c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v128c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240z"/>
+      </svg>
     ),
-    label: ' Property in All Market Cycles ',
-    desc: 'How property can be used strategically, regardless of market conditions.',
   },
   {
-    cardId: '39c74f19',
-    listId: '7226ae3f',
-    headingId: 'acba081',
+    label: 'Finance & Grow\nYour Portfolio',
+    desc: 'Understand how successful investors use bank finance strategically to grow their portfolios while managing risk responsibly.',
     icon: (
-      <svg aria-hidden="true" className="e-font-icon-svg e-fas-exclamation-triangle" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.37l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"/>
+      </svg>
     ),
-    label: ' Strategies to Avoid ',
-    desc: "Which outdated investment strategies could be holding investors back in today's market.",
   },
   {
-    cardId: '6bf816b1',
-    listId: '5efa3d53',
-    headingId: '3d31da0c',
+    label: 'Protect Your\nWealth',
+    desc: 'Learn how trust structures and asset protection strategies can help safeguard your investments and support long-term wealth creation.',
     icon: (
-      <svg aria-hidden="true" className="e-font-icon-svg e-fas-shield-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"/>
+      </svg>
     ),
-    label: ' Asset Protection Structures ',
-    desc: 'How legal trust structures and proper planning can help protect your assets.',
   },
   {
-    cardId: '43077419',
-    listId: '2aa5e9ac',
-    headingId: '1ce1ecff',
+    label: 'Invest With Confidence\nIn Any Market',
+    desc: 'Understand property market cycles and learn how to make informed investment decisions regardless of market conditions.',
     icon: (
-      <svg aria-hidden="true" className="e-font-icon-svg e-fas-users" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/></svg>
+      <svg width="64" height="64" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/>
+      </svg>
     ),
-    label: ' Generational Wealth Planning ',
-    desc: 'How to plan beyond short-term gains and build long-term generational wealth.',
+  },
+  {
+    label: 'Build Generational\nWealth',
+    desc: 'Develop a long-term investment strategy that helps create financial security for you and future generations.',
+    icon: (
+      <svg width="64" height="64" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#0D203B" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/>
+      </svg>
+    ),
   },
 ]
 
 export default function WalkAwayWith() {
   return (
-    <div
-      className="elementor-element elementor-element-57ce5658 e-flex e-con-boxed e-con e-parent e-lazyloaded"
-      data-id="57ce5658"
-      data-element_type="container"
-      data-settings='{"background_background":"classic"}'
-    >
-      <div className="e-con-inner">
-        <div className="elementor-element elementor-element-2d2cd815 e-con-full e-flex e-con e-child" data-id="2d2cd815" data-element_type="container">
-          <div className="elementor-element elementor-element-7855225 elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="7855225" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default">What You Will Discover </h2>
-          </div>
-          <div className="elementor-element elementor-element-633c8db8 e-con-full e-flex e-con e-child" data-id="633c8db8" data-element_type="container">
-            {benefits.map((b) => (
-              <div key={b.cardId} className={`elementor-element elementor-element-${b.cardId} e-con-full e-flex e-con e-child`} data-id={b.cardId} data-element_type="container">
-                <div className={`elementor-element elementor-element-${b.listId} elementor-align-start elementor-mobile-align-start elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list`} data-id={b.listId} data-element_type="widget" data-widget_type="icon-list.default">
-                  <ul className="elementor-icon-list-items">
-                    <li className="elementor-icon-list-item">
-                      <span className="elementor-icon-list-icon">{b.icon}</span>
-                      <span className="elementor-icon-list-text">{b.label}</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className={`elementor-element elementor-element-${b.headingId} elementor-widget__width-inherit elementor-widget elementor-widget-heading`} data-id={b.headingId} data-element_type="widget" data-widget_type="heading.default">
-                  <h2 className="elementor-heading-title elementor-size-default">{b.desc}</h2>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="elementor-element elementor-element-22aed652 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="22aed652" data-element_type="widget" data-widget_type="button.default">
-            <a
-              className="elementor-button elementor-button-link elementor-size-sm"
-              href={QUICKET_JHB}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="elementor-button-content-wrapper">
-                <span className="elementor-button-text">Secure your seat</span>
-              </span>
-            </a>
-          </div>
+    <div style={{ backgroundColor: '#ffffff', padding: '60px 20px', textAlign: 'center' }}>
+      <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+        <h2 style={{ color: '#0D203B', fontFamily: '"Montserrat", Sans-serif', fontSize: '32px', fontWeight: 700, textTransform: 'uppercase', margin: '0 0 40px', letterSpacing: '0.5px' }}>
+          What You Will Learn
+        </h2>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
+          {benefits.map((b, i) => (
+            <div key={i} style={{ flex: '0 0 calc(33.333% - 14px)', minWidth: '260px', backgroundColor: '#f7f8fa', borderRadius: '10px', padding: '32px 20px 28px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+              <div style={{ marginBottom: '18px' }}>{b.icon}</div>
+              <p style={{ color: '#0D203B', fontFamily: '"Montserrat", Sans-serif', fontSize: '14px', fontWeight: 700, textTransform: 'uppercase', margin: '0 0 12px', lineHeight: 1.35, letterSpacing: '0.3px', whiteSpace: 'pre-line' }}>
+                {b.label}
+              </p>
+              <p style={{ color: '#555555', fontFamily: '"Poppins", Sans-serif', fontSize: '13px', margin: 0, lineHeight: 1.6 }}>
+                {b.desc}
+              </p>
+            </div>
+          ))}
         </div>
+
+        <div style={{ marginTop: '40px' }}>
+          <a
+            href="#tickets"
+            style={{ display: 'inline-block', backgroundColor: '#C89116', color: '#ffffff', fontFamily: '"Montserrat", Sans-serif', fontSize: '14px', fontWeight: 700, textTransform: 'uppercase', padding: '14px 40px', borderRadius: '4px', textDecoration: 'none', letterSpacing: '0.5px' }}
+          >
+            Secure Your Seat
+          </a>
+        </div>
+
       </div>
     </div>
   )

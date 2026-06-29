@@ -10,13 +10,15 @@ export default function ProvenStrategies() {
         <div className="elementor-element elementor-element-1a8f4a8 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="1a8f4a8" data-element_type="container" />
         <div className="elementor-element elementor-element-41efe1bb e-con-full e-flex e-con e-child" data-id="41efe1bb" data-element_type="container">
           <div className="elementor-element elementor-element-44a0e66b elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="44a0e66b" data-element_type="widget" data-widget_type="heading.default">
-            <h2 className="elementor-heading-title elementor-size-default">Built on Proven Property Investment Strategies</h2>
+            <h2 className="elementor-heading-title elementor-size-default">MEET YOUR PRESENTER</h2>
           </div>
           <div className="elementor-element elementor-element-49c76cee elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="49c76cee" data-element_type="widget" data-widget_type="text-editor.default">
-            <p>This masterclass is built on property investment frameworks developed by <span>Coert Coetzee</span> and the Wealth Masters Club team.</p>
-            <p>These strategies focus on:<br />– Structure before scale<br />– Tax-efficient property investing<br />– Long-term portfolio growth<br />– Sustainable wealth creation</p>
-            <p><strong>Since 1996,</strong> Wealth Masters Club has helped investors think differently about wealth creation, property investment and financial freedom.</p>
-            <p>Today, these principles have contributed to the acquisition of more than <strong>2,200 properties</strong>, with a combined value exceeding <strong>R2.4 billion.</strong></p>
+            <p style={{ color: '#C89116', fontWeight: 700, fontSize: '1.4em', margin: '0 0 4px' }}>COERT COETZEE</p>
+            <p><strong>FOUNDER OF WEALTH MASTERS CLUB | EDUCATING SOUTH AFRICAN INVESTORS SINCE 1996</strong></p>
+            <p>For nearly 30 years, Coert Coetzee has helped South Africans understand how to build wealth through property, smart structuring and long-term investment strategy.</p>
+            <p>As founder of Wealth Masters Club, Coert teaches practical frameworks that help investors make informed decisions, protect their assets and build sustainable wealth.</p>
+            <p>The principles taught through Wealth Masters Club have contributed to 2,200+ property acquisitions, with a combined value exceeding R2.4 billion.</p>
+            <p><strong>Established 1996 | 2,200+ Properties | R2.4 Billion+</strong></p>
           </div>
         </div>
       </div>
