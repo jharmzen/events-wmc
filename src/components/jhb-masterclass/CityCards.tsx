@@ -1,15 +1,5 @@
 const cities = [
   {
-    id: '4ca81f70',
-    name: 'DURBAN',
-    dateDisplay: '27 June 2026',
-    venue: 'Capital Pearls, Durban',
-    img: '/images/city-card-durban.png',
-    pageLink: 'https://events.wealthmastersclub.com/step/property-investment-masterclass-dbn27062026',
-    bookLink: 'https://www.quicket.co.za/events/369575-wealth-property-investment-masterclass-2706-capital-pearls',
-    goldFrame: false,
-  },
-  {
     id: '4395195',
     name: 'GAUTENG',
     dateDisplay: '04 July 2026',
@@ -28,6 +18,16 @@ const cities = [
     img: '/images/city-card-capetown.png',
     pageLink: 'http://x/',
     bookLink: 'https://www.quicket.co.za/events/369918-wealth-property-investment-masterclass-2507-lord-charles',
+    goldFrame: false,
+  },
+  {
+    id: '4ca81f70',
+    name: 'DURBAN',
+    dateDisplay: '5 September 2026',
+    venue: 'Capital Pearls, Durban',
+    img: '/images/city-card-durban.png',
+    pageLink: 'https://events.wealthmastersclub.com/step/property-investment-masterclass-dbn27062026',
+    bookLink: 'https://www.quicket.co.za/events/384123-wealth-property-investment-masterclass-0209capital-pearls/',
     goldFrame: false,
   },
 ]
