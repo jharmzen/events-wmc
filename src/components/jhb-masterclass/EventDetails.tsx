@@ -1,4 +1,4 @@
-const QUICKET_JHB = 'https://www.quicket.co.za/events/377079-wealth-property-investment-masterclass-0407-emperors-palace#/'
+const QUICKET_JHB = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
 
 const DiamondIcon = () => (
   <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ export default function EventDetails() {
                 <ul className="elementor-icon-list-items">
                   <li className="elementor-icon-list-item">
                     <span className="elementor-icon-list-icon"><DiamondIcon /></span>
-                    <span className="elementor-icon-list-text">04 July 2026 | 09:00 – 13:00</span>
+                    <span className="elementor-icon-list-text">15 August 2026 | 09:00 – 13:00</span>
                   </li>
                   <li className="elementor-icon-list-item">
                     <span className="elementor-icon-list-icon"><DiamondIcon /></span>

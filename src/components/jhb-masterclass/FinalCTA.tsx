@@ -1,4 +1,4 @@
-const QUICKET_JHB = 'https://www.quicket.co.za/events/377079-wealth-property-investment-masterclass-0407-emperors-palace#/'
+const QUICKET_JHB = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
 
 export default function FinalCTA() {
   return (

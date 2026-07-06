@@ -1,16 +1,5 @@
 const cities = [
   {
-    id: '4395195',
-    name: 'GAUTENG',
-    dateDisplay: '04 July 2026',
-    venue: 'Emperors Palace, Gauteng',
-    img: '/images/city-card-jhb.png',
-    // TODO: Confirm JHB pageLink — slug still reads jhb23052026 (23 May), but event is 04 July 2026. Awaiting correct landing-page URL from user.
-    pageLink: 'http://events.wealthmastersclub.com/step/property-investment-masterclass-jhb23052026',
-    bookLink: 'https://www.quicket.co.za/events/377079-wealth-property-investment-masterclass-0407-emperors-palace#/',
-    goldFrame: true,
-  },
-  {
     id: '3f4517b5',
     name: 'CAPE TOWN',
     dateDisplay: '25 July 2026',
@@ -19,6 +8,16 @@ const cities = [
     pageLink: 'http://x/',
     bookLink: 'https://www.quicket.co.za/events/369918-wealth-property-investment-masterclass-2507-lord-charles',
     goldFrame: false,
+  },
+  {
+    id: '4395195',
+    name: 'GAUTENG',
+    dateDisplay: '15 August 2026',
+    venue: 'Emperors Palace, Gauteng',
+    img: '/images/city-card-gauteng-aug2026.png',
+    pageLink: 'http://events.wealthmastersclub.com/step/property-investment-masterclass-jhb23052026',
+    bookLink: 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
+    goldFrame: true,
   },
   {
     id: '4ca81f70',

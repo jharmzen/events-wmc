@@ -44,9 +44,11 @@ export default function App() {
       <Route path="/wealth-shift-20260708" element={<WealthShiftPage />} />
       {/* Old slug retained for historic marketing runs — redirect to current date */}
       <Route path="/wealth-shift-20260617" element={<Navigate to="/wealth-shift-20260708" replace />} />
-      <Route path="/jhb-masterclass-20260704" element={<JhbMasterclassPage />} />
+      <Route path="/jhb-masterclass-20260815" element={<JhbMasterclassPage />} />
+      {/* Old slug retained for historic marketing runs — redirect to current date */}
+      <Route path="/jhb-masterclass-20260704" element={<Navigate to="/jhb-masterclass-20260815" replace />} />
       {/* Dev/marketing short link — redirect to canonical slug */}
-      <Route path="/040072026" element={<Navigate to="/jhb-masterclass-20260704" replace />} />
+      <Route path="/040072026" element={<Navigate to="/jhb-masterclass-20260815" replace />} />
     </Routes>
   )
 }

@@ -1,4 +1,4 @@
-const QUICKET_JHB = 'https://www.quicket.co.za/events/377079-wealth-property-investment-masterclass-0407-emperors-palace#/'
+const QUICKET_JHB = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
 
 const CoffeeIcon = () => (
   <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
