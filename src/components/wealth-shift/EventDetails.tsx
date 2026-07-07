@@ -94,11 +94,11 @@ export default function EventDetails() {
             </div>
             <div className="elementor-element elementor-element-2c027be0 elementor-mobile-align-center elementor-align-left elementor-widget elementor-widget-button" data-id="2c027be0" data-element_type="widget" data-widget_type="button.default">
               {/* TODO: Add Quicket booking URL for Wealth Shift Webinar 8 July 2026 */}
-              <a className="elementor-button elementor-button-link elementor-size-sm" href="https://www.quicket.co.za/events/380454-property-investment-wealth-webinar-1706#/" target="_blank" rel="noopener noreferrer">
+              <span className="elementor-button elementor-button-link elementor-size-sm" style={{ display: 'inline-block', backgroundColor: '#1D2B42', color: '#C89116', border: '2px solid #C89116', fontFamily: '"Montserrat", Sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.12em', textTransform: 'uppercase', borderRadius: '30px', padding: '14px 40px', cursor: 'default', pointerEvents: 'none' }}>
                 <span className="elementor-button-content-wrapper">
-                  <span className="elementor-button-text">BOOK NOW</span>
+                  <span className="elementor-button-text">SOLD OUT</span>
                 </span>
-              </a>
+              </span>
             </div>
           </div>
 

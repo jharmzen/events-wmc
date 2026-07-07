@@ -48,11 +48,11 @@ export default function HeroMobile() {
           </div>
           <div className="elementor-element elementor-element-f202a0 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="f202a0" data-element_type="widget" data-widget_type="button.default">
             {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 8 July 2026 */}
-            <a className="elementor-button elementor-button-link elementor-size-sm" href="#details">
+            <span className="elementor-button elementor-button-link elementor-size-sm" style={{ display: 'inline-block', backgroundColor: '#1D2B42', color: '#C89116', border: '2px solid #C89116', fontFamily: '"Montserrat", Sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.12em', textTransform: 'uppercase', borderRadius: '30px', padding: '14px 40px', cursor: 'default', pointerEvents: 'none' }}>
               <span className="elementor-button-content-wrapper">
-                <span className="elementor-button-text">RESERVE YOUR SEAT NOW</span>
+                <span className="elementor-button-text">SOLD OUT</span>
               </span>
-            </a>
+            </span>
           </div>
         </div>
       </div>

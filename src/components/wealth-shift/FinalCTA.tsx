@@ -57,15 +57,14 @@ export default function FinalCTA() {
           data-widget_type="button.default"
         >
           {/* TODO: Add Quicket/booking URL for Wealth Shift Webinar 8 July 2026 */}
-          <a
+          <span
             className="elementor-button elementor-button-link elementor-size-sm"
-            href="#details"
-            style={{ backgroundColor: '#C89116', color: '#1D2B42', fontFamily: '"Poppins", Sans-serif', fontWeight: 700, textTransform: 'uppercase', borderRadius: '30px', padding: '14px 40px', fontSize: '15px', letterSpacing: '0.05em', display: 'inline-block' }}
+            style={{ display: 'inline-block', backgroundColor: '#1D2B42', color: '#C89116', border: '2px solid #C89116', fontFamily: '"Montserrat", Sans-serif', fontWeight: 700, fontSize: '15px', letterSpacing: '0.12em', textTransform: 'uppercase', borderRadius: '30px', padding: '14px 40px', cursor: 'default', pointerEvents: 'none' }}
           >
             <span className="elementor-button-content-wrapper">
-              <span className="elementor-button-text">SECURE YOUR SPOT NOW</span>
+              <span className="elementor-button-text">SOLD OUT</span>
             </span>
-          </a>
+          </span>
         </div>
       </div>
     </div>
