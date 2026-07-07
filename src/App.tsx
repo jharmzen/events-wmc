@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import WealthShiftPage from './pages/WealthShiftPage'
 import JhbMasterclassPage from './pages/JhbMasterclassPage'
+import CptMasterclassPage from './pages/CptMasterclassPage'
 
 const APP_VERSION = __APP_VERSION__
 const RELOAD_KEY = 'version_reload_attempted'
@@ -45,6 +46,7 @@ export default function App() {
       {/* Old slug retained for historic marketing runs — redirect to current date */}
       <Route path="/wealth-shift-20260617" element={<Navigate to="/wealth-shift-20260708" replace />} />
       <Route path="/jhb-masterclass-20260815" element={<JhbMasterclassPage />} />
+      <Route path="/cpt-masterclass-20260725" element={<CptMasterclassPage />} />
       {/* Old slug retained for historic marketing runs — redirect to current date */}
       <Route path="/jhb-masterclass-20260704" element={<Navigate to="/jhb-masterclass-20260815" replace />} />
       {/* Dev/marketing short link — redirect to canonical slug */}
