@@ -5,7 +5,7 @@ export default function HeroMobile() {
       data-id="2f223c2d"
       data-element_type="container"
       data-settings='{"background_background":"classic"}'
-      style={{ backgroundImage: 'url("/images/cpt-hero-fade.jpg")', backgroundAttachment: 'fixed', minHeight: 'auto' }}
+      style={{ backgroundImage: 'url("/images/cpt-hero-fade.png")', backgroundAttachment: 'fixed', minHeight: 'auto' }}
     >
       <div className="e-con-inner">
         <div className="elementor-element elementor-element-70a1e744 e-con-full e-flex e-con e-child" data-id="70a1e744" data-element_type="container" style={{ width: '100%', maxWidth: '100%' }}>

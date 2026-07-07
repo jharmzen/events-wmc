@@ -5,7 +5,7 @@ export default function HeroDesktop() {
       data-id="37a3303a"
       data-element_type="container"
       data-settings='{"background_background":"classic"}'
-      style={{ backgroundImage: 'url("/images/cpt-hero-fade.jpg")', backgroundAttachment: 'fixed' }}
+      style={{ backgroundImage: 'url("/images/cpt-hero-fade.png")', backgroundAttachment: 'fixed' }}
     >
       <div className="e-con-inner" style={{ maxWidth: '1475px', width: '100%', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'clamp(15px, 4vw, 60px)', paddingRight: 'clamp(15px, 4vw, 60px)' }}>
         <div className="elementor-element elementor-element-4246301f e-con-full e-flex e-con e-child" data-id="4246301f" data-element_type="container" data-settings='{"background_background":"classic"}' style={{ marginTop: 0 }}>
