@@ -5,9 +5,10 @@ export default function HeroMobile() {
       data-id="2f223c2d"
       data-element_type="container"
       data-settings='{"background_background":"classic"}'
-      style={{ backgroundImage: 'url("/images/cpt-hero-fade.png")', backgroundAttachment: 'fixed', minHeight: 'auto' }}
+      style={{ backgroundImage: 'url("/images/cpt-hero-fade.png")', backgroundAttachment: 'fixed', backgroundPosition: 'right center', backgroundSize: 'cover', minHeight: 'auto', position: 'relative' }}
     >
-      <div className="e-con-inner">
+      <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(13,32,59,0.18)', pointerEvents: 'none', zIndex: 0 }} />
+      <div className="e-con-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="elementor-element elementor-element-70a1e744 e-con-full e-flex e-con e-child" data-id="70a1e744" data-element_type="container" style={{ width: '100%', maxWidth: '100%' }}>
           <div className="elementor-element elementor-element-37a7135a elementor-widget elementor-widget-heading" data-id="37a7135a" data-element_type="widget" data-widget_type="heading.default">
             <h2 className="elementor-heading-title elementor-size-default" style={{ color: '#C89116' }}>BUY RIGHT | INVEST SMART | BUILD WEALTH</h2>

@@ -74,7 +74,7 @@ export default function TicketIncludes() {
             </p>
             <p style={{ color: '#555555', fontFamily: '"Poppins", Sans-serif', fontSize: '13px', margin: '0 0 20px' }}>per person</p>
             <FeatureList items={fullFeatures} />
-            <a href={QUICKET_CPT} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: '100%', backgroundColor: '#0D203B', color: '#ffffff', fontFamily: '"Montserrat", Sans-serif', fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', padding: '14px', borderRadius: '4px', textDecoration: 'none', textAlign: 'center', letterSpacing: '0.5px', marginTop: 'auto', boxSizing: 'border-box' }}>
+            <a href="mailto:hdp@wealthmastersclub.com?subject=Property%20Investment%20Masterclass:%20Cape%20Town%20-%20Member%20Seat" style={{ display: 'block', width: '100%', backgroundColor: '#0D203B', color: '#ffffff', fontFamily: '"Montserrat", Sans-serif', fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', padding: '14px', borderRadius: '4px', textDecoration: 'none', textAlign: 'center', letterSpacing: '0.5px', marginTop: 'auto', boxSizing: 'border-box' }}>
               Reserve Your Seat
             </a>
           </div>
