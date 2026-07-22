@@ -56,35 +56,20 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
     <div
       style={{
         backgroundColor: 'rgba(13,32,59,0.85)',
-        padding: '20px 16px 24px',
+        padding: '28px 24px 32px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
       }}
     >
-      {/* Role label */}
-      <p
-        style={{
-          color: '#FFFFFF',
-          fontFamily: '"Montserrat", Sans-serif',
-          fontSize: '13px',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          textAlign: 'center',
-          margin: '0 0 6px',
-        }}
-      >
-        {speaker.roleLabel}
-      </p>
-
-      {/* Speaker name */}
+      {/* Line 1 — name if present, otherwise roleLabel; always Montserrat bold */}
       {speaker.name && (
         <p
           style={{
             color: '#FFFFFF',
-            fontFamily: '"Antonio", sans-serif',
-            fontSize: 'clamp(18px, 2.5vw, 24px)',
-            fontWeight: 900,
+            fontFamily: '"Montserrat", sans-serif',
+            fontSize: '20px',
+            fontWeight: 700,
             textTransform: 'uppercase',
             textAlign: 'center',
             margin: '0 0 6px',
@@ -94,18 +79,33 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
         </p>
       )}
 
+      {/* Role label — gold when below a name, white when primary (line 1) */}
+      <p
+        style={{
+          color: speaker.name ? '#c89a4f' : '#FFFFFF',
+          fontFamily: '"Montserrat", sans-serif',
+          fontSize: '20px',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          textAlign: 'center',
+          margin: '0 0 8px',
+        }}
+      >
+        {speaker.roleLabel}
+      </p>
+
       {/* Sub-role tag */}
       {speaker.subRole && (
         <p
           style={{
             color: '#c89a4f',
-            fontFamily: '"Montserrat", Sans-serif',
-            fontSize: '11px',
+            fontFamily: '"Montserrat", sans-serif',
+            fontSize: '20px',
             fontWeight: 700,
             textTransform: 'uppercase',
             letterSpacing: '0.5px',
             textAlign: 'center',
-            margin: '0 0 12px',
+            margin: '0 0 14px',
           }}
         >
           {speaker.subRole}
@@ -116,8 +116,8 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
       <p
         style={{
           color: 'rgba(255,255,255,0.8)',
-          fontFamily: '"Poppins", Sans-serif',
-          fontSize: '13px',
+          fontFamily: '"Poppins", sans-serif',
+          fontSize: '16px',
           lineHeight: 1.65,
           textAlign: 'center',
           margin: 0,
@@ -144,9 +144,9 @@ export default function Speakers() {
           <p
             style={{
               color: '#FFFFFF',
-              fontFamily: '"Montserrat", Sans-serif',
+              fontFamily: '"Montserrat", sans-serif',
               fontWeight: 700,
-              fontSize: '18px',
+              fontSize: '22px',
               textTransform: 'uppercase',
               letterSpacing: '2px',
               margin: '0 0 8px',
@@ -159,7 +159,7 @@ export default function Speakers() {
               color: '#c89a4f',
               fontFamily: '"Antonio", sans-serif',
               fontWeight: 900,
-              fontSize: 'clamp(28px, 4vw, 46px)',
+              fontSize: 'clamp(36px, 4.5vw, 56px)',
               textTransform: 'uppercase',
               letterSpacing: '0.5px',
               margin: 0,

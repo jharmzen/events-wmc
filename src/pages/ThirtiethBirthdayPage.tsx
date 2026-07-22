@@ -11,24 +11,9 @@ import IsThisForYou from '../components/30th-birthday/IsThisForYou'
 import FAQs from '../components/30th-birthday/FAQs'
 import FinalCTA from '../components/30th-birthday/FinalCTA'
 
-const pageStyles = `
-  /* ── 30th Birthday: global font overrides ── */
-
-  .birthday-page h1, .birthday-page h2, .birthday-page h3,
-  .birthday-page h4, .birthday-page h5, .birthday-page h6 {
-    font-family: 'Barlow Condensed', sans-serif !important;
-  }
-
-  .birthday-page p,
-  .birthday-page li {
-    font-family: 'Poppins', sans-serif !important;
-  }
-`
-
 export default function ThirtiethBirthdayPage() {
   return (
     <div className="cartflows-container birthday-page">
-      <style>{pageStyles}</style>
       <RouteHead
         title="30 Years of Building Wealth – One Historic Celebration | Wealth Masters Club"
         description="Join Wealth Masters Club as we celebrate 30 years of helping South Africans build lasting wealth. 15 August 2026 | Emperors Palace, Kempton Park | 09:00–17:00 | R800 per person."

@@ -1,9 +1,16 @@
 import React from 'react'
 
-// TODO: Add Quicket/booking URL when available
-const BOOKING_URL = '#book'
+const BOOKING_URL = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
 
-export default function NavBar() {
+export default function NavBar({
+  accentColor = '#c89a4f',
+  accentColorLight = '#feea9a',
+  bookingUrl = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
+}: {
+  accentColor?: string
+  accentColorLight?: string
+  bookingUrl?: string
+} = {}) {
   return (
     <div
       style={{
@@ -42,9 +49,8 @@ export default function NavBar() {
           }}
         >
           {[
-            { href: '#event', label: 'THE EVENT' },
+            { href: '#details', label: 'EVENT DETAILS' },
             { href: '#speakers', label: 'SPEAKERS' },
-            { href: '#details', label: 'DETAILS' },
             { href: '#faqs', label: 'FAQ' },
           ].map(({ href, label }, i) => (
             <React.Fragment key={label}>
@@ -69,9 +75,11 @@ export default function NavBar() {
             </React.Fragment>
           ))}
           <a
-            href={BOOKING_URL}
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
-              background: 'linear-gradient(to right, #c89a4f, #feea9a, #c89a4f)',
+              background: `linear-gradient(to right, ${accentColor}, ${accentColorLight}, ${accentColor})`,
               color: '#0D203B',
               fontFamily: '"Antonio", sans-serif',
               fontSize: '12px',

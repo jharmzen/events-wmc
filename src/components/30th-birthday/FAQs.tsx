@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // TODO: Add Quicket/booking URL when available
-const BOOKING_URL = '#book'
+const BOOKING_URL = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
 
 const faqs = [
   {
@@ -47,7 +47,15 @@ const faqs = [
   },
 ]
 
-export default function FAQs() {
+export default function FAQs({
+  accentColor = '#c89a4f',
+  accentColorLight = '#feea9a',
+  bookingUrl = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
+}: {
+  accentColor?: string
+  accentColorLight?: string
+  bookingUrl?: string
+} = {}) {
   const [open, setOpen] = useState<number | null>(0)
 
   return (
@@ -70,10 +78,10 @@ export default function FAQs() {
             marginBottom: '14px',
           }}
         >
-          <span style={{ flex: 1, maxWidth: '80px', height: '1px', backgroundColor: '#c89a4f', display: 'block' }} />
+          <span style={{ flex: 1, maxWidth: '80px', height: '1px', backgroundColor: accentColor, display: 'block' }} />
           <span
             style={{
-              color: '#c89a4f',
+              color: accentColor,
               fontFamily: '"Montserrat", Sans-serif',
               fontSize: '13px',
               fontWeight: 700,
@@ -84,7 +92,7 @@ export default function FAQs() {
           >
             FAQs
           </span>
-          <span style={{ flex: 1, maxWidth: '80px', height: '1px', backgroundColor: '#c89a4f', display: 'block' }} />
+          <span style={{ flex: 1, maxWidth: '80px', height: '1px', backgroundColor: accentColor, display: 'block' }} />
         </div>
 
         {/* Main heading */}
@@ -109,7 +117,7 @@ export default function FAQs() {
               <div
                 key={i}
                 style={{
-                  border: isOpen ? '1px solid #c89a4f' : '1px solid rgba(255,255,255,0.12)',
+                  border: isOpen ? `1px solid ${accentColor}` : '1px solid rgba(255,255,255,0.12)',
                   borderRadius: '8px',
                   overflow: 'hidden',
                   transition: 'border-color 0.2s',
@@ -140,7 +148,7 @@ export default function FAQs() {
                       height: '32px',
                       borderRadius: '50%',
                       // open → gold; closed → steel blue
-                      backgroundColor: isOpen ? '#c89a4f' : '#4782B5',
+                      backgroundColor: isOpen ? accentColor : '#4782B5',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -188,7 +196,7 @@ export default function FAQs() {
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                       transition: 'transform 0.25s ease',
                       // open → gold; closed → white
-                      color: isOpen ? '#c89a4f' : '#FFFFFF',
+                      color: isOpen ? accentColor : '#FFFFFF',
                     }}
                   >
                     <path
@@ -262,22 +270,23 @@ export default function FAQs() {
         {/* JOIN NOW CTA */}
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
           <a
-            href={BOOKING_URL}
+            href="#book"
+            rel="noopener noreferrer"
             style={{
               display: 'inline-block',
-              background: 'linear-gradient(to right, #c89a4f, #feea9a, #c89a4f)',
+              background: `linear-gradient(to right, ${accentColor}, ${accentColorLight}, ${accentColor})`,
               color: '#0D203B',
               fontFamily: '"Antonio", sans-serif',
-              fontSize: '14px',
+              fontSize: '18px',
               fontWeight: 700,
               textTransform: 'uppercase',
-              letterSpacing: '1.5px',
-              padding: '16px 60px',
+              letterSpacing: '2px',
+              padding: '18px 60px',
               borderRadius: '4px',
               textDecoration: 'none',
             }}
           >
-            Join Now
+            JOIN NOW
           </a>
         </div>
 

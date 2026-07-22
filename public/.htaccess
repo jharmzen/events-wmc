@@ -1,5 +1,11 @@
 Options -MultiViews
 RewriteEngine On
+
+# Route-specific HTML with correct OG meta (served to bots that don't execute JS)
+RewriteRule ^30th-birthday/?$ /30th-birthday-meta.html [L]
+RewriteRule ^cpt-30th-birthday/?$ /cpt-30th-birthday-meta.html [L]
+
+# SPA fallback for all other routes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]

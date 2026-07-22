@@ -62,9 +62,10 @@ export default function IsThisForYou() {
 
           <p
             style={{
-              color: '#555544',
+              color: '#0D203B',
               fontFamily: '"Poppins", Sans-serif',
-              fontSize: '13px',
+              fontSize: '15px',
+              fontWeight: 700,
               fontStyle: 'italic',
               margin: '0 0 14px',
             }}
@@ -109,7 +110,7 @@ export default function IsThisForYou() {
             style={{
               color: '#0D203B',
               fontFamily: '"Poppins", Sans-serif',
-              fontSize: '13px',
+              fontSize: '15px',
               fontWeight: 700,
               fontStyle: 'italic',
               marginTop: 20,

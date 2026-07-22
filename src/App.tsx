@@ -5,6 +5,7 @@ import WealthShiftPage from './pages/WealthShiftPage'
 import JhbMasterclassPage from './pages/JhbMasterclassPage'
 import CptMasterclassPage from './pages/CptMasterclassPage'
 import ThirtiethBirthdayPage from './pages/ThirtiethBirthdayPage'
+import CptThirtiethBirthdayPage from './pages/CptThirtiethBirthdayPage'
 
 const APP_VERSION = __APP_VERSION__
 const RELOAD_KEY = 'version_reload_attempted'
@@ -49,6 +50,7 @@ export default function App() {
       <Route path="/jhb-masterclass-20260815" element={<JhbMasterclassPage />} />
       <Route path="/cpt-masterclass-20260725" element={<CptMasterclassPage />} />
       <Route path="/30th-birthday" element={<ThirtiethBirthdayPage />} />
+      <Route path="/cpt-30th-birthday" element={<CptThirtiethBirthdayPage />} />
       {/* Old slug retained for historic marketing runs — redirect to current date */}
       <Route path="/jhb-masterclass-20260704" element={<Navigate to="/jhb-masterclass-20260815" replace />} />
       {/* Dev/marketing short link — redirect to canonical slug */}
