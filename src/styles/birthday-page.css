@@ -39,7 +39,13 @@
   }
 
   /* ── TicketAndPartners ────────────────────────────
-     Ticket icon grid: 4 columns → 2 columns */
+     Panels stack: remove border divider and side padding */
+  .bday-ticket-panel {
+    border-right: none !important;
+    padding-right: 0 !important;
+  }
+
+  /* Ticket icon grid: 4 columns → 2 columns */
   .bday-ticket-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }

@@ -52,8 +52,9 @@ export default function TicketAndPartners() {
       >
         {/* LEFT HALF — YOUR TICKET INCLUDES */}
         <div
+          className="bday-ticket-panel"
           style={{
-            flex: 1,
+            flex: '1 1 300px',
             minWidth: 0,
             paddingRight: 'clamp(30px,4vw,60px)',
             borderRight: '1px solid #c89a4f',
@@ -124,7 +125,7 @@ export default function TicketAndPartners() {
         {/* RIGHT HALF — MEET OUR TRUSTED INDUSTRY PARTNERS */}
         <div
           style={{
-            flex: 1,
+            flex: '1 1 300px',
             minWidth: 0,
             paddingLeft: 'clamp(30px,4vw,60px)',
           }}
