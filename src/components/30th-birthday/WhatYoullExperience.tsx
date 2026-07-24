@@ -80,6 +80,7 @@ export default function WhatYoullExperience() {
             style={{
               flex: '1 1 0',
               display: 'flex',
+              flexWrap: 'wrap',
               alignItems: 'flex-start',
             }}
           >
@@ -87,7 +88,7 @@ export default function WhatYoullExperience() {
               <div
                 key={i}
                 style={{
-                  flex: 1,
+                  flex: '1 1 140px',
                   padding: '0 clamp(8px, 1.5vw, 20px)',
                   textAlign: 'center',
                   borderLeft: i > 0 ? '1px solid rgba(200,145,22,0.5)' : undefined,

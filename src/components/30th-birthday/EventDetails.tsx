@@ -122,7 +122,6 @@ export default function EventDetails({
               textTransform: 'uppercase',
               letterSpacing: '1px',
               margin: 0,
-              whiteSpace: 'nowrap',
             }}
           >
             EVENT DETAILS
@@ -131,12 +130,12 @@ export default function EventDetails({
         </div>
 
         {/* 6-column row with vertical dividers */}
-        <div style={{ display: 'flex', gap: 0 }}>
+        <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
           {details.map((d, i) => (
             <div
               key={i}
               style={{
-                flex: 1,
+                flex: '1 1 130px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',

@@ -22,13 +22,13 @@ const pillars = [
 export default function WhyDifferent() {
   return (
     <section
+      className="bday-why-bg"
       style={{
         position: 'relative',
         overflow: 'hidden',
         backgroundImage: "url('/images/30th-birthday/photo-stage-coert.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        backgroundAttachment: 'fixed',
         padding: 'clamp(100px,12vw,160px) clamp(20px,5vw,60px)',
       }}
     >
@@ -58,6 +58,7 @@ export default function WhyDifferent() {
 
       {/* Content — left ~55% of width */}
       <div
+        className="bday-why-content"
         style={{
           position: 'relative',
           zIndex: 1,
@@ -95,6 +96,7 @@ export default function WhyDifferent() {
         <div
           style={{
             display: 'flex',
+            flexWrap: 'wrap',
             gap: 0,
             marginBottom: 28,
           }}
@@ -103,7 +105,7 @@ export default function WhyDifferent() {
             <div
               key={i}
               style={{
-                flex: '1 1 0',
+                flex: '1 1 120px',
                 textAlign: 'center',
                 borderLeft: i > 0 ? '1px solid rgba(200,145,22,0.35)' : undefined,
                 padding: '0 16px',

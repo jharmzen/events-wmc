@@ -15,6 +15,7 @@ export default function Hero({
 }) {
   return (
     <section
+      className="bday-hero"
       style={{
         position: 'relative',
         overflow: 'hidden',
@@ -26,11 +27,13 @@ export default function Hero({
         src={heroImage}
         alt=""
         aria-hidden="true"
+        className="bday-hero-img"
         style={{ width: '100%', height: 'auto', display: 'block' }}
       />
 
       {/* Content overlay — positioned over the image */}
       <div
+        className="bday-hero-overlay"
         style={{
           position: 'absolute',
           top: 0,

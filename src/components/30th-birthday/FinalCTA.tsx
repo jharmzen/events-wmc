@@ -81,7 +81,6 @@ export default function FinalCTA({
               fontSize: 'clamp(24px,3vw,40px)',
               textTransform: 'uppercase',
               margin: 0,
-              whiteSpace: 'nowrap',
             }}
           >
             THE NEXT BILLION STARTS HERE

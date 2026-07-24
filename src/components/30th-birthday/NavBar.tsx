@@ -42,6 +42,7 @@ export default function NavBar({
 
         {/* Nav links — hidden on small mobile */}
         <nav
+          className="bday-nav-links"
           style={{
             display: 'flex',
             alignItems: 'center',

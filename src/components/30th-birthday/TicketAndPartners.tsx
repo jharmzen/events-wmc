@@ -47,6 +47,7 @@ export default function TicketAndPartners() {
           margin: '0 auto',
           display: 'flex',
           gap: 0,
+          flexWrap: 'wrap',
         }}
       >
         {/* LEFT HALF — YOUR TICKET INCLUDES */}
@@ -75,6 +76,7 @@ export default function TicketAndPartners() {
 
           {/* 4×2 icon grid */}
           <div
+            className="bday-ticket-grid"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(4, 1fr)',

@@ -10,6 +10,7 @@ import EventDetails from '../components/30th-birthday/EventDetails'
 import IsThisForYou from '../components/30th-birthday/IsThisForYou'
 import FAQs from '../components/30th-birthday/FAQs'
 import FinalCTA from '../components/30th-birthday/FinalCTA'
+import '../styles/birthday-page.css'
 
 export default function ThirtiethBirthdayPage() {
   return (
