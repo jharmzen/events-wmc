@@ -13,17 +13,10 @@
 @media (max-width: 767px) {
 
   /* ── Hero ─────────────────────────────────────────
-     Stack layout on mobile: hero image fills top,
-     content flows below on dark navy background.
-     The img and overlay divs become static/block. */
-  .bday-hero {
-    display: flex;
-    flex-direction: column;
-  }
+     Hide hero image on mobile; overlay becomes a static
+     block on the dark navy section background. */
   .bday-hero-img {
-    position: static !important;
-    width: 100%;
-    height: auto;
+    display: none !important;
   }
   .bday-hero-overlay {
     position: static !important;
@@ -51,7 +44,13 @@
   }
 
   /* ── WhyDifferent ─────────────────────────────────
-     Content box: expand from 55% maxWidth to full width */
+     Hide background photo on mobile; solid dark navy instead */
+  .bday-why-bg {
+    background-image: none !important;
+    background-color: #0D203B;
+  }
+
+  /* Content box: expand from 55% maxWidth to full width */
   .bday-why-content {
     max-width: 100% !important;
   }
