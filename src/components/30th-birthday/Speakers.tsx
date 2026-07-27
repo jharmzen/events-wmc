@@ -1,5 +1,5 @@
 interface Speaker {
-  roleLabel: string;
+  roleLabel: string | null;
   name: string | null;
   subRole: string | null;
   bio: string;
@@ -22,7 +22,7 @@ const speakers: Speaker[] = [
     image: '/images/30th-birthday/photo-coert-headshot.png',
   },
   {
-    roleLabel: 'SPECIAL GUEST SPEAKER',
+    roleLabel: null,
     name: 'HANLI-MARI DUROW',
     subRole: 'LEADING PROPERTY ATTORNEY | JACOBS ROBBERTSE ATTORNEYS',
     bio: 'Learn how the right legal structures help protect wealth and create better investment outcomes.',
@@ -47,7 +47,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
     <div style={{ backgroundColor: '#0a1828', borderBottom: '2px solid #c89a4f' }}>
       <img
         src={speaker.image}
-        alt={speaker.name ?? speaker.roleLabel}
+        alt={speaker.name ?? speaker.roleLabel ?? ''}
         style={{ width: '100%', aspectRatio: '3/4', objectFit: 'cover', display: 'block' }}
       />
     </div>
@@ -80,19 +80,21 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
       )}
 
       {/* Role label — gold when below a name, white when primary (line 1) */}
-      <p
-        style={{
-          color: speaker.name ? '#c89a4f' : '#FFFFFF',
-          fontFamily: '"Montserrat", sans-serif',
-          fontSize: '20px',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          textAlign: 'center',
-          margin: '0 0 8px',
-        }}
-      >
-        {speaker.roleLabel}
-      </p>
+      {speaker.roleLabel && (
+        <p
+          style={{
+            color: speaker.name ? '#c89a4f' : '#FFFFFF',
+            fontFamily: '"Montserrat", sans-serif',
+            fontSize: '20px',
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            textAlign: 'center',
+            margin: '0 0 8px',
+          }}
+        >
+          {speaker.roleLabel}
+        </p>
+      )}
 
       {/* Sub-role tag */}
       {speaker.subRole && (
