@@ -23,10 +23,10 @@ const speakers: Speaker[] = [
   },
   {
     roleLabel: 'SPECIAL GUEST SPEAKER',
-    name: null,
-    subRole: 'LEADING PROPERTY ATTORNEY',
+    name: 'HANLI-MARI DUROW',
+    subRole: 'LEADING PROPERTY ATTORNEY | JACOBS ROBBERTSE ATTORNEYS',
     bio: 'Learn how the right legal structures help protect wealth and create better investment outcomes.',
-    image: '/images/30th-birthday/silhouette-female.png',
+    image: '/images/30th-birthday/Hanli-Mari-Durow.png',
   },
 ]
 
@@ -44,7 +44,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
     }}
   >
     {/* Image area */}
-    <div style={{ backgroundColor: '#0a1828' }}>
+    <div style={{ backgroundColor: '#0a1828', borderBottom: '2px solid #c89a4f' }}>
       <img
         src={speaker.image}
         alt={speaker.name ?? speaker.roleLabel}
