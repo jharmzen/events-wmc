@@ -28,7 +28,7 @@ export default function ThirtiethBirthdayPage() {
         className="elementor elementor-1162"
       >
         <NavBar />
-        <Hero />
+        <Hero speakersImage="/images/30th-birthday/speakers.png" />
         <HistoricMilestone />
         <Speakers />
         <WhatYoullExperience />

@@ -1,61 +1,64 @@
 import { useState } from 'react'
 
-// TODO: Add Quicket/booking URL when available
-const BOOKING_URL = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/'
-
-const faqs = [
-  {
-    q: 'Who can attend this event?',
-    a: "Everyone is welcome. Whether you're a Wealth Masters Club member or attending for the first time, this event is designed for anyone who wants to create, protect and grow long-term wealth.",
-  },
-  {
-    q: 'What is included in my ticket?',
-    a: 'Your ticket includes:',
-    list: [
-      'Full-day event (09:00–17:00)',
-      'Arrival tea, coffee & snacks',
-      'Mid-morning refreshments',
-      'Buffet lunch',
-      'Afternoon refreshments',
-      'Access to all speaker sessions',
-      'Networking with investors and industry professionals',
-    ],
-  },
-  {
-    q: 'Who will be speaking?',
-    a: "The day will be hosted by Coert Coetzee, Founder of Wealth Masters Club. You'll also hear from two special guest experts: South Africa's Leading Bond Originator and a Leading Property Attorney. Their identities will remain a surprise until the event.",
-  },
-  {
-    q: 'What will I learn?',
-    a: "You'll discover proven wealth creation strategies, how successful investors access funding, ways to protect your assets through the correct legal structures, and practical insights gained from over 30 years of property investment experience.",
-  },
-  {
-    q: 'Can I meet the speakers and service providers?',
-    a: "Yes. Throughout the day you'll have opportunities to network with fellow investors, speak to our trusted industry partners, and engage directly with the speakers during breaks.",
-  },
-  {
-    q: 'Is this event suitable for beginners?',
-    a: "Absolutely. Whether you're buying your first investment property or already have an established portfolio, you'll gain valuable strategies and practical knowledge you can apply immediately.",
-  },
-  {
-    q: 'Where is the event taking place?',
-    a: "Emperors Palace Convention Centre, Kempton Park, Johannesburg. Saturday, 15 August 2026 — 09:00 to 17:00.",
-  },
-  {
-    q: 'Is parking available?',
-    a: "Yes. Secure parking is available at Emperors Palace. At the entrance, notify them that you will be going to the conference centre.",
-  },
-]
-
 export default function FAQs({
   accentColor = '#c89a4f',
   accentColorLight = '#feea9a',
   bookingUrl = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
+  eventLocation = 'Emperors Palace Convention Centre, Kempton Park, Johannesburg',
+  eventDate = 'Saturday, 15 August 2026',
+  parkingVenue = 'Emperors Palace',
 }: {
   accentColor?: string
   accentColorLight?: string
   bookingUrl?: string
+  eventLocation?: string
+  eventDate?: string
+  parkingVenue?: string
 } = {}) {
+  const faqs = [
+    {
+      q: 'Who can attend this event?',
+      a: "Everyone is welcome. Whether you're a Wealth Masters Club member or attending for the first time, this event is designed for anyone who wants to create, protect and grow long-term wealth.",
+    },
+    {
+      q: 'What is included in my ticket?',
+      a: 'Your ticket includes:',
+      list: [
+        'Full-day event (09:00–17:00)',
+        'Arrival tea, coffee & snacks',
+        'Mid-morning refreshments',
+        'Buffet lunch',
+        'Afternoon refreshments',
+        'Access to all speaker sessions',
+        'Networking with investors and industry professionals',
+      ],
+    },
+    {
+      q: 'Who will be speaking?',
+      a: "The day will be hosted by Coert Coetzee, Founder of Wealth Masters Club. He will be joined by Luther Grobler, Regional Manager at BetterBond, and Hanli-Mari Durow, Attorney, Conveyancer and Notary at Jacobs Robbertse Attorneys. Together, they will share practical insights into property investment, finance and property law, giving you valuable knowledge to invest with greater confidence and protect your property portfolio.",
+    },
+    {
+      q: 'What will I learn?',
+      a: "You'll discover proven wealth creation strategies, how successful investors access funding, ways to protect your assets through the correct legal structures, and practical insights gained from over 30 years of property investment experience.",
+    },
+    {
+      q: 'Can I meet the speakers and service providers?',
+      a: "Yes. Throughout the day you'll have opportunities to network with fellow investors, speak to our trusted industry partners, and engage directly with the speakers during breaks.",
+    },
+    {
+      q: 'Is this event suitable for beginners?',
+      a: "Absolutely. Whether you're buying your first investment property or already have an established portfolio, you'll gain valuable strategies and practical knowledge you can apply immediately.",
+    },
+    {
+      q: 'Where is the event taking place?',
+      a: `${eventLocation}. ${eventDate} — 09:00 to 17:00.`,
+    },
+    {
+      q: 'Is parking available?',
+      a: `Yes. Secure parking is available at ${parkingVenue}. At the entrance, notify them that you will be going to the conference centre.`,
+    },
+  ]
+
   const [open, setOpen] = useState<number | null>(0)
 
   return (

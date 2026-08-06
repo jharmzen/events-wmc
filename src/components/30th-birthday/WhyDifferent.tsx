@@ -26,7 +26,7 @@ export default function WhyDifferent() {
       style={{
         position: 'relative',
         overflow: 'hidden',
-        backgroundImage: "url('/images/30th-birthday/photo-stage-coert.png')",
+        backgroundImage: "url('/images/30th-birthday/event-why.png')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         padding: 'clamp(100px,12vw,160px) clamp(20px,5vw,60px)',

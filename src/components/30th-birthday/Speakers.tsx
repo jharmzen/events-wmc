@@ -6,13 +6,13 @@ interface Speaker {
   image: string;
 }
 
-const speakers: Speaker[] = [
+const defaultSpeakers: Speaker[] = [
   {
-    roleLabel: 'SPECIAL GUEST SPEAKER',
-    name: null,
-    subRole: "SOUTH AFRICA'S LEADING BOND ORIGINATOR",
+    roleLabel: null,
+    name: 'LUTHER GROBLER',
+    subRole: "JOHANNESBURG'S LEADING BOND ORIGINATOR",
     bio: "Discover how experienced investors access funding and leverage Other People's Money to grow their portfolios.",
-    image: '/images/30th-birthday/silhouette-male.png',
+    image: '/images/30th-birthday/luther.png',
   },
   {
     roleLabel: 'HOST AND FOUNDER OF WEALTH MASTERS CLUB',
@@ -22,9 +22,9 @@ const speakers: Speaker[] = [
     image: '/images/30th-birthday/photo-coert-headshot.png',
   },
   {
-    roleLabel: null,
-    name: 'HANLI-MARI DUROW',
-    subRole: 'LEADING PROPERTY ATTORNEY | JACOBS ROBBERTSE ATTORNEYS',
+    roleLabel: 'SPECIAL GUEST SPEAKER',
+    name: null,
+    subRole: 'LEADING PROPERTY ATTORNEY',
     bio: 'Learn how the right legal structures help protect wealth and create better investment outcomes.',
     image: '/images/30th-birthday/Hanli-Mari-Durow.png',
   },
@@ -131,7 +131,7 @@ const SpeakerCard = ({ speaker }: { speaker: Speaker }) => (
   </div>
 )
 
-export default function Speakers() {
+export default function Speakers({ speakers = defaultSpeakers }: { speakers?: Speaker[] } = {}) {
   return (
     <section
       id="speakers"

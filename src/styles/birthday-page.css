@@ -13,15 +13,16 @@
 @media (max-width: 767px) {
 
   /* ── Hero ─────────────────────────────────────────
-     Hide hero image on mobile; overlay becomes a static
-     block on the dark navy section background. */
-  .bday-hero-img {
-    display: none !important;
-  }
-  .bday-hero-overlay {
-    position: static !important;
+     Drop background image on mobile — solid dark navy instead.
+     Section padding tightened for small screens. */
+  .bday-hero {
+    background-image: none !important;
     padding: 28px 20px 36px !important;
-    background: #0D203B;
+  }
+
+  /* Hide speakers composite image on mobile */
+  .bday-hero-speakers {
+    display: none !important;
   }
 
   /* ── NavBar ───────────────────────────────────────

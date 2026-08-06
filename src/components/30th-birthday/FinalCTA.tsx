@@ -29,12 +29,16 @@ export default function FinalCTA({
   accentColorLight = '#feea9a',
   date = '15 AUGUST 2026',
   dateLabel = 'SATURDAY',
+  venueName = 'EMPERORS PALACE',
+  venueCity = 'KEMPTON PARK',
   bookingUrl = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
 }: {
   accentColor?: string
   accentColorLight?: string
   date?: string
   dateLabel?: string
+  venueName?: string
+  venueCity?: string
   bookingUrl?: string
 } = {}) {
   return (
@@ -100,7 +104,7 @@ export default function FinalCTA({
         >
           {[
             { icon: <CalendarIcon />, main: date, sub: dateLabel },
-            { icon: <LocationIcon />, main: 'EMPERORS PALACE', sub: 'KEMPTON PARK' },
+            { icon: <LocationIcon />, main: venueName, sub: venueCity },
             { icon: <ClockIcon />, main: '09:00 – 17:00', sub: 'FULL DAY EVENT' },
             { icon: <TicketIcon />, main: 'R800 PP', sub: 'LUNCH BUFFET INCLUDED' },
           ].map((item, i) => (

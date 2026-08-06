@@ -16,7 +16,7 @@ const ticketItems = [
     icon: <img src="/images/30th-birthday/icon-snacks-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
   },
   {
-    label: 'FULL-DAY WEALTH PROGRAMME',
+    label: 'FULL-DAY WEALTH CELEBRATIONS',
     icon: <img src="/images/30th-birthday/icon-presentation-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
   },
   {
@@ -28,7 +28,7 @@ const ticketItems = [
     icon: <img src="/images/30th-birthday/icon-certified-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
   },
   {
-    label: 'A DAY OF VALUE & INSPIRATION',
+    label: 'SPOT PRIZE GIVEAWAYS THROUGHOUT THE DAY',
     icon: <img src="/images/30th-birthday/icon-gift-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
   },
 ];
@@ -91,7 +91,7 @@ export default function TicketAndPartners() {
                 <div
                   key={item.label}
                   style={{
-                    padding: '28px 16px',
+                    padding: '16px 12px',
                     textAlign: 'center',
                     display: 'flex',
                     flexDirection: 'column',
@@ -105,7 +105,7 @@ export default function TicketAndPartners() {
                   <span
                     style={{
                       fontFamily: 'Montserrat, sans-serif',
-                      fontSize: 15,
+                      fontSize: 13,
                       fontWeight: 700,
                       color: '#111111',
                       textTransform: 'uppercase',

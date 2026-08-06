@@ -1,60 +1,54 @@
-const BOOKING_URL = '#book'
-
 export default function Hero({
-  heroImage = '/images/30th-birthday/bg-30-years-hero-jhb.png',
+  heroImage = null,
+  speakersImage = null,
   accentColor = '#c89a4f',
   accentColorLight = '#feea9a',
   date = '15 AUGUST 2026',
   dateLabel = 'SATURDAY',
+  venueName = 'EMPERORS PALACE',
+  venueCity = 'KEMPTON PARK',
+  eyebrow = '30 YEARS OF HELPING SOUTH AFRICANS BUILD WEALTH',
+  headlineWhite = 'R10.4 BILLION',
+  headlineGold = ['THE NEXT', 'SUCCESS STORY', 'COULD BE YOURS'],
+  bodyText = "Join South Africa's leading property investment experts for a full day of practical strategies, finance insights and legal guidance designed to help you invest with greater confidence.",
+  ctaText = 'MORE INFORMATION',
 }: {
-  heroImage?: string
+  heroImage?: string | null
+  speakersImage?: string | null
   accentColor?: string
   accentColorLight?: string
   date?: string
   dateLabel?: string
+  venueName?: string
+  venueCity?: string
+  eyebrow?: string
+  headlineWhite?: string
+  headlineGold?: string[]
+  bodyText?: string
+  ctaText?: string
 }) {
   return (
     <section
       className="bday-hero"
       style={{
-        position: 'relative',
-        overflow: 'hidden',
         backgroundColor: '#0D203B',
+        ...(heroImage ? { backgroundImage: `url(${heroImage})`, backgroundSize: 'cover', backgroundPosition: 'center center' } : {}),
+        padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,80px) clamp(50px,6vw,80px)',
       }}
     >
-      {/* Image — controls section height at natural 16:9 ratio, never cropped */}
-      <img
-        src={heroImage}
-        alt=""
-        aria-hidden="true"
-        className="bday-hero-img"
-        style={{ width: '100%', height: 'auto', display: 'block' }}
-      />
-
-      {/* Content overlay — positioned over the image */}
-      <div
-        className="bday-hero-overlay"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          padding: 'clamp(60px,8vw,100px) clamp(20px,5vw,80px) clamp(50px,6vw,80px)',
-          display: 'flex',
-          alignItems: 'flex-start',
-        }}
-      >
       {/* Inner content */}
       <div
         style={{
           maxWidth: 1340,
           margin: '0 auto',
           width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 'clamp(20px, 3vw, 48px)',
         }}
       >
         {/* Left column */}
-        <div style={{ maxWidth: 720 }}>
+        <div style={{ flex: 1, maxWidth: 720 }}>
 
           {/* Eyebrow */}
           <p
@@ -68,47 +62,38 @@ export default function Hero({
               margin: '0 0 16px',
             }}
           >
-            30 YEARS OF BUILDING WEALTH
+            {eyebrow}
           </p>
 
-          {/* Headline — line 1 WHITE, lines 2-3 GOLD */}
+          {/* Headline — line 1 WHITE, remaining lines GOLD */}
           <div style={{ marginBottom: 24 }}>
             <div
               style={{
                 fontFamily: '"Antonio", sans-serif',
                 fontWeight: 900,
-                fontSize: 'clamp(52px,7vw,96px)',
+                fontSize: 'clamp(40px,5.5vw,80px)',
                 textTransform: 'uppercase',
                 lineHeight: 1.05,
                 color: '#FFFFFF',
               }}
             >
-              R10.4 BILLION
+              {headlineWhite}
             </div>
-            <div
-              style={{
-                fontFamily: '"Antonio", sans-serif',
-                fontWeight: 900,
-                fontSize: 'clamp(52px,7vw,96px)',
-                textTransform: 'uppercase',
-                lineHeight: 1.05,
-                color: accentColor,
-              }}
-            >
-              ONE HISTORIC
-            </div>
-            <div
-              style={{
-                fontFamily: '"Antonio", sans-serif',
-                fontWeight: 900,
-                fontSize: 'clamp(52px,7vw,96px)',
-                textTransform: 'uppercase',
-                lineHeight: 1.05,
-                color: accentColor,
-              }}
-            >
-              CELEBRATION
-            </div>
+            {headlineGold.map((line, i) => (
+              <div
+                key={i}
+                style={{
+                  fontFamily: '"Antonio", sans-serif',
+                  fontWeight: 900,
+                  fontSize: 'clamp(40px,5.5vw,80px)',
+                  textTransform: 'uppercase',
+                  lineHeight: 1.05,
+                  color: accentColor,
+                }}
+              >
+                {line}
+              </div>
+            ))}
           </div>
 
           {/* Body paragraph */}
@@ -123,11 +108,10 @@ export default function Hero({
               margin: '0 0 32px',
             }}
           >
-            Join Wealth Masters Club as we celebrate 30 years of helping South
-            Africans build lasting wealth through residential property investment.
+            {bodyText}
           </p>
 
-          {/* Info row: 3 chips LEFT, ticket box RIGHT */}
+          {/* Info chips: date, venue, time */}
           <div
             style={{
               display: 'flex',
@@ -138,7 +122,6 @@ export default function Hero({
               flexWrap: 'wrap',
             }}
           >
-            {/* 3 chips grouped left */}
             <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', alignItems: 'flex-start' }}>
 
               {/* Date */}
@@ -163,10 +146,10 @@ export default function Hero({
                 </svg>
                 <div>
                   <div style={{ fontFamily: '"Montserrat", sans-serif', fontSize: 17, fontWeight: 700, color: '#FFFFFF', textTransform: 'uppercase', lineHeight: 1.2 }}>
-                    EMPERORS PALACE
+                    {venueName}
                   </div>
                   <div style={{ fontFamily: '"Montserrat", sans-serif', fontSize: 13, fontWeight: 700, color: accentColor, textTransform: 'uppercase', lineHeight: 1.2 }}>
-                    KEMPTON PARK
+                    {venueCity}
                   </div>
                 </div>
               </div>
@@ -186,9 +169,7 @@ export default function Hero({
                 </div>
               </div>
 
-            </div>{/* end chips group */}
-
-            {/* Ticket box is embedded in the background image */}
+            </div>
           </div>
 
           {/* CTA button */}
@@ -210,7 +191,7 @@ export default function Hero({
               textAlign: 'center',
             }}
           >
-            GO TO EVENT DETAILS
+            {ctaText}
           </a>
 
           {/* Disclaimer */}
@@ -228,7 +209,19 @@ export default function Hero({
           </p>
 
         </div>
-      </div>
+
+        {/* Right column — speakers composite image */}
+        {speakersImage && (
+          <div className="bday-hero-speakers" style={{ flexShrink: 0 }}>
+            <img
+              src={speakersImage}
+              alt=""
+              aria-hidden="true"
+              style={{ height: 'clamp(380px, 46vw, 680px)', width: 'auto', display: 'block' }}
+            />
+          </div>
+        )}
+
       </div>
     </section>
   )
