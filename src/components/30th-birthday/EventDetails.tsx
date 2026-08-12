@@ -191,7 +191,9 @@ export default function EventDetails({
 
         {/* Book your seat button */}
         <a
-          href="#book"
+          href={bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             display: 'block',
             margin: '40px auto 0',

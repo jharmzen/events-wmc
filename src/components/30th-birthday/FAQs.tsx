@@ -275,7 +275,8 @@ export default function FAQs({
         {/* JOIN NOW CTA */}
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
           <a
-            href="#book"
+            href={bookingUrl}
+            target="_blank"
             rel="noopener noreferrer"
             style={{
               display: 'inline-block',
