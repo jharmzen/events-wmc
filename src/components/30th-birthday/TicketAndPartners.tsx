@@ -1,3 +1,5 @@
+import React from 'react'
+
 const ticketItems = [
   {
     label: 'ARRIVAL TEA & COFFEE',
@@ -9,7 +11,7 @@ const ticketItems = [
   },
   {
     label: 'BUFFET LUNCH',
-    icon: <img src="/images/30th-birthday/icon-breakfast-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
+    icon: <img src="/images/30th-birthday/icon-buffet-brown.png" alt="" aria-hidden="true" style={{ height: 64, display: 'block' }} />,
   },
   {
     label: 'AFTERNOON REFRESHMENTS',
@@ -33,7 +35,15 @@ const ticketItems = [
   },
 ];
 
-export default function TicketAndPartners() {
+export default function TicketAndPartners({ lastItemLabel = 'SPOT PRIZE GIVEAWAYS THROUGHOUT THE DAY', iconFilter }: { lastItemLabel?: string; iconFilter?: string } = {}) {
+  const items = ticketItems.map((item, i) => {
+    const base = i === ticketItems.length - 1 ? { ...item, label: lastItemLabel } : item
+    if (!iconFilter) return base
+    return {
+      ...base,
+      icon: <img src={(base.icon as React.ReactElement<React.ImgHTMLAttributes<HTMLImageElement>>).props.src} alt="" aria-hidden="true" style={{ height: 64, display: 'block', filter: iconFilter }} />,
+    }
+  })
   return (
     <section
       style={{
@@ -84,7 +94,7 @@ export default function TicketAndPartners() {
               gridTemplateRows: 'repeat(2, auto)',
             }}
           >
-            {ticketItems.map((item, index) => {
+            {items.map((item, index) => {
               const col = index % 4;
               const row = Math.floor(index / 4);
               return (

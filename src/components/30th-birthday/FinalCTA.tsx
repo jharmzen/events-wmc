@@ -96,7 +96,6 @@ export default function FinalCTA({
         <div
           style={{
             display: 'flex',
-            flexWrap: 'wrap',
             justifyContent: 'center',
             gap: 'clamp(16px,2.5vw,36px)',
             marginBottom: 28,

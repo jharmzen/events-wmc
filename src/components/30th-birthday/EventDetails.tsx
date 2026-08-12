@@ -54,12 +54,14 @@ export default function EventDetails({
   accentColorLight = '#feea9a',
   date = 'Saturday, 15 August 2026',
   venue = 'Emperors Palace Convention Centre, Kempton Park',
+  includes = 'Arrival refreshments\nBuffet Lunch\nTea & Coffee',
   bookingUrl = 'https://www.quicket.co.za/events/385051-wealth-property-investment-masterclass-1508-emperors-palace/',
 }: {
   accentColor?: string
   accentColorLight?: string
   date?: string
   venue?: string
+  includes?: string
   bookingUrl?: string
 } = {}) {
   const details = [
@@ -86,7 +88,7 @@ export default function EventDetails({
     {
       icon: <IncludesIcon accentColor={accentColor} />,
       label: 'INCLUDES',
-      value: 'Arrival refreshments\nBuffet Lunch\nTea & Coffee',
+      value: includes,
     },
     {
       icon: <PeopleIcon accentColor={accentColor} />,

@@ -7,6 +7,7 @@ export default function FAQs({
   eventLocation = 'Emperors Palace Convention Centre, Kempton Park, Johannesburg',
   eventDate = 'Saturday, 15 August 2026',
   parkingVenue = 'Emperors Palace',
+  speakersAnswer = "The day will be hosted by Coert Coetzee, Founder of Wealth Masters Club. He will be joined by Luther Grobler, Regional Manager at BetterBond, and Hanli-Mari Durow, Attorney, Conveyancer and Notary at Jacobs Robbertse Attorneys. Together, they will share practical insights into property investment, finance and property law, giving you valuable knowledge to invest with greater confidence and protect your property portfolio.",
 }: {
   accentColor?: string
   accentColorLight?: string
@@ -14,6 +15,7 @@ export default function FAQs({
   eventLocation?: string
   eventDate?: string
   parkingVenue?: string
+  speakersAnswer?: string
 } = {}) {
   const faqs = [
     {
@@ -35,7 +37,7 @@ export default function FAQs({
     },
     {
       q: 'Who will be speaking?',
-      a: "The day will be hosted by Coert Coetzee, Founder of Wealth Masters Club. He will be joined by Luther Grobler, Regional Manager at BetterBond, and Hanli-Mari Durow, Attorney, Conveyancer and Notary at Jacobs Robbertse Attorneys. Together, they will share practical insights into property investment, finance and property law, giving you valuable knowledge to invest with greater confidence and protect your property portfolio.",
+      a: speakersAnswer,
     },
     {
       q: 'What will I learn?',
