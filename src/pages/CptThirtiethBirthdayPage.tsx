@@ -65,14 +65,14 @@ export default function CptThirtiethBirthdayPage() {
           },
         ]} />
         <WhatYoullExperience />
-        <TicketAndPartners lastItemLabel="EXCLUSIVE EVENT GOODY BAG" iconFilter="brightness(0) saturate(100%) invert(47%) sepia(48%) saturate(400%) hue-rotate(175deg) brightness(95%)" />
+        <TicketAndPartners iconFilter="brightness(0) saturate(100%) invert(47%) sepia(48%) saturate(400%) hue-rotate(175deg) brightness(95%)" />
         <WhyDifferent />
         <EventDetails
           accentColor="#4782b5"
           accentColorLight="#a3c0da"
           date="Saturday, 29 August 2026"
           venue="Lord Charles, Somerset West, Cape Town"
-          includes={"Arrival refreshments\nBuffet Lunch\nTea & Coffee\nExclusive event goody bag"}
+          includes={"Arrival refreshments\nBuffet Lunch\nTea & Coffee"}
           bookingUrl="https://www.quicket.co.za/events/369918-wealth-property-full-day-masterclass-30-year-anniversary-2908-lord-charles"
         />
         <IsThisForYou />
