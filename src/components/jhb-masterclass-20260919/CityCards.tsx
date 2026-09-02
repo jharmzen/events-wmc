@@ -2,16 +2,6 @@ const QUICKET_URL = 'https://www.quicket.co.za/events/392089-wealth-property-hal
 
 const cities = [
   {
-    id: '4ca81f70',
-    name: 'DURBAN',
-    dateDisplay: '05 September 2026',
-    venue: 'Capital Pearls, Durban',
-    img: 'https://backoffice.treoc.com/data/archive/documents/images/6a420bd5517d3.png',
-    pageLink: '',
-    bookLink: 'https://www.quicket.co.za/events/384123-wealth-property-investment-masterclass-0209capital-pearls/',
-    goldFrame: false,
-  },
-  {
     id: '4395195',
     name: 'GAUTENG',
     dateDisplay: '19 September 2026',
@@ -29,6 +19,16 @@ const cities = [
     img: 'https://backoffice.treoc.com/data/archive/documents/images/6a94f733b5fa1.png',
     pageLink: '',
     bookLink: 'https://www.quicket.co.za/events/394914-wealth-property-investment-masterclass-2609-protea-hotel-technopark/',
+    goldFrame: false,
+  },
+  {
+    id: '4ca81f70',
+    name: 'DURBAN',
+    dateDisplay: '3 October 2026',
+    venue: 'Capital Pearls, Durban',
+    img: 'https://backoffice.treoc.com/data/archive/documents/images/6a98233a0d005.png',
+    pageLink: '',
+    bookLink: 'https://www.quicket.co.za/events/395012-wealth-property-investment-masterclass-0310-capital-pearls/',
     goldFrame: false,
   },
 ]

@@ -54,7 +54,7 @@ export default function HeroDesktop() {
                 <span className="elementor-icon-list-icon">
                   <svg aria-hidden="true" className="e-font-icon-svg e-fas-ticket-alt" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M128 160h320v192H128V160zm400 96c0 26.51 21.49 48 48 48v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c26.51 0 48-21.49 48-48s-21.49-48-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v96c-26.51 0-48 21.49-48 48zm-48-104c0-13.255-10.745-24-24-24H120c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V152z"/></svg>
                 </span>
-                <span className="elementor-icon-list-text">Non-Members: R800 &nbsp;|&nbsp; Members &amp; Guests: R400</span>
+                <span className="elementor-icon-list-text">Non-Members: R400 &nbsp;|&nbsp; Members &amp; Guests: R199</span>
               </li>
             </ul>
           </div>

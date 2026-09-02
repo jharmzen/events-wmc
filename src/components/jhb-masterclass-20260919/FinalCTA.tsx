@@ -52,9 +52,9 @@ export default function FinalCTA() {
           {/* Pricing row */}
           <div style={{ display: 'flex', border: '1px solid #0D203B', borderRadius: '4px', overflow: 'hidden' }}>
             {[
-              { price: 'R800', label: 'per person' },
-              { price: 'R1,200', label: 'for 2 people' },
-              { price: 'R1,600', label: 'for 3 people' },
+              { price: 'R400', label: 'per person' },
+              { price: 'R599', label: 'for 2 people' },
+              { price: 'R798', label: 'for 3 people' },
             ].map((item, i, arr) => (
               <div key={i} style={{ flex: 1, padding: '14px 8px', textAlign: 'center', borderRight: i < arr.length - 1 ? '1px solid #0D203B' : 'none' }}>
                 <p style={{ fontFamily: '"Montserrat", sans-serif', fontSize: '22px', fontWeight: 700, color: '#0D203B', margin: 0, lineHeight: 1 }}>{item.price}</p>
@@ -67,7 +67,7 @@ export default function FinalCTA() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div style={{ flex: 1, height: '1px', backgroundColor: '#C89116' }} />
             <p style={{ fontFamily: '"Montserrat", sans-serif', fontSize: '13px', fontWeight: 700, color: '#0D203B', margin: 0, whiteSpace: 'nowrap' }}>
-              Platinum Members R400
+              Members &amp; Guests R199
             </p>
             <div style={{ flex: 1, height: '1px', backgroundColor: '#C89116' }} />
           </div>

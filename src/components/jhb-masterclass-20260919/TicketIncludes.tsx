@@ -70,7 +70,7 @@ export default function TicketIncludes() {
               Platinum Member
             </p>
             <p style={{ color: '#C89116', fontFamily: '"Montserrat", Sans-serif', fontSize: '52px', fontWeight: 700, margin: '0 0 4px', lineHeight: 1 }}>
-              R400
+              R199
             </p>
             <p style={{ color: '#555555', fontFamily: '"Poppins", Sans-serif', fontSize: '13px', margin: '0 0 20px' }}>per person</p>
             <FeatureList items={fullFeatures} />
@@ -92,7 +92,7 @@ export default function TicketIncludes() {
                 Non-Member
               </p>
               <p style={{ color: '#C89116', fontFamily: '"Montserrat", Sans-serif', fontSize: '52px', fontWeight: 700, margin: '0 0 4px', lineHeight: 1 }}>
-                R800
+                R400
               </p>
               <p style={{ color: '#555555', fontFamily: '"Poppins", Sans-serif', fontSize: '13px', margin: '0 0 20px' }}>per person</p>
               <FeatureList items={fullFeatures} />
@@ -109,7 +109,7 @@ export default function TicketIncludes() {
               Guest Ticket
             </p>
             <p style={{ color: '#0D203B', fontFamily: '"Montserrat", Sans-serif', fontSize: '52px', fontWeight: 700, margin: '0 0 4px', lineHeight: 1 }}>
-              R400
+              R199
             </p>
             <p style={{ color: '#555555', fontFamily: '"Poppins", Sans-serif', fontSize: '13px', margin: '0 0 20px' }}>Bring a friend, spouse or business partner.</p>
             <FeatureList items={guestFeatures} />
